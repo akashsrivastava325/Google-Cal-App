@@ -9,8 +9,8 @@ function App() {
   const [error, setError] = useState("");
 
   const handleAuth = () => {
-    // window.location.replace("https://calender-app.onrender.com/rest/v1/calendar/init/");
-    window.location.replace("http://localhost:8000/rest/v1/calendar/init/");
+    window.location.replace("https://google-cal-app.onrender.com/rest/v1/calendar/init/");
+//     window.location.replace("http://localhost:8000/rest/v1/calendar/init/");
   };
 
 
@@ -20,8 +20,8 @@ function App() {
     const code = urlParams.get("code");
 
     setIsLoading(true);
-    // var url = new URL("https://calender-app.onrender.com/rest/v1/calendar/redirect");
-    var url = new URL("http://localhost:8000/rest/v1/calendar/redirect");
+    var url = new URL("https://google-cal-app.onrender.com/rest/v1/calendar/redirect");
+//     var url = new URL("http://localhost:8000/rest/v1/calendar/redirect");
     url.searchParams.append('code', code);
 
     axios
